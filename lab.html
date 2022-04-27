@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Lab Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/lab.css">          
+    </head>
+
+    <body>
+        <section>
+           
+            <img src="image/Lab-Test/lab-test.jpg" class="floatRight">
+            
+            <form action="">
+                <article>
+                    <h2>1. Your Contact Details</h2>
+                    <div class="left">
+                        <p>Full Name</p>
+                        <input type="text" title="name" required>
+                    </div>
+                        
+                    <div class="left">
+                        <p>Patient Id if exists</p>
+                        <input type="number">
+                    </div>
+                        
+                    <div class="clear">&nbsp;</div>
+
+                    <div class="left">
+                        <p>Contact Number</p>
+                        <input type="number" min="6000000000" max="9999999999" required>
+                    </div>
+
+                    <div class="left">
+                        <p>Email Id</p>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="clear">&nbsp;</div>
+                </article>
+
+                <article>
+                    <h2>2. Address</h2>
+                    <div class="left">
+                        <p>H-No.</p>
+                        <input type="text" required>
+                    </div>
+                        
+                    <div class="left">
+                        <p>Street</p>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="clear">&nbsp;</div>
+
+                    <p>Area</p>
+                    <input type="text" required>
+
+                    <p>District</p>
+                    <select name="District" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="Bangalore Urban">Bangalore Urban</option>
+                        <option value="Bangalore Rural">Bangalore Rural</option>
+                        <option value="Ramnagar">Ramnagar</option>
+                    </select>
+                </article>
+
+                <article>
+                    <p>Choose the Test Type</p>
+                    <input type="checkbox" id="c1" name="option1" value="CBC">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Complete Blood Count">
+                    <label for="c2">Complete Blood Count</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                    <label for="c3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone (TSH)">
+                    <label for="c4">Thyroid Stimulating Hormone (TSH)</label>
+                    <br>
+                    <input type="checkbox" id="c5" name="option4" value="Glucose Test">
+                    <label for="c5">Glucose Test</label>
+                </article>
+
+                <article>
+                    <p>Do you want a hard copy of the report also?</p>
+                    <input type="radio" id="c6" name="option" value="True" required>
+                    <label for="c6">Yes</label>
+                    <br>
+                    <input type="radio" id="c7" name="option" value="False">
+                    <label for="c7">No</label>
+                </article>
+                    
+                <article>
+                    <p>Select your comfortable Date and Time</p>
+                    <input type="datetime-local" value="datetime-local" required>
+                </article>
+                <button>Submit</button>
+                <button>Reset</button>
+            </form>
+        </section>
+    </body>
+</html>
