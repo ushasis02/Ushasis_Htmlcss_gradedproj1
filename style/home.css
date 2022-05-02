@@ -3,7 +3,7 @@ body{
 }
 
 header{
-    width: 100%;
+    /*width: 100%;*/
     font-weight: bolder;
     color: rgb(255, 255, 255);
     font-size: xx-large;
@@ -30,7 +30,7 @@ footer{
 }
 
 .menu{
-    width: 100%;
+    /*width: 100%;*/
     margin: 0%;
     background-color: rgba(0, 0, 0, .5);
 }
